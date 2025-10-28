@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form - AIUB</title>
+</head>
+ 
+<body>
+<h2>AIUB Registration Form</h2>
+ 
+    <form action="/register" method="POST">
+<!-- Full Name Field -->
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" required>
+<br><br>
+ 
+        <!-- Email Field -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+ 
+        <!--Phone Number- Field-->
+<label for="phon_number">Phone Number</label>
+<input type="number" id="phon_number" name="phon_number" required>
+<br><br>
+ 
+        <!-- Password Field -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<br><br>
+ 
+        <!-- Confirm Password Field -->
+<label for="confirm-password">Confirm Password:</label>
+<input type="password" id="confirm-password" name="confirm_password" required>
+<br><br>
+ 
+        <!-- Gender Selection -->
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label>
+ 
+        <input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+ 
+        <input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label>
+<br><br>
+ 
+        <!-- Date of Birth -->
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required>
+<br><br>
+ 
+        <!-- Department Selection -->
+<label for="department">Department (AIUB):</label>
+<select id="department" name="department" required>
+<option value="">-- Select Department --</option>
+<option value="CSE">Computer Science and Engineering (CSE)</option>
+<option value="CS">Computer Science (CS)</option>
+<option value="CIS">Computer Information Systems (CIS)</option>
+<option value="EEE">Electrical and Electronic Engineering (EEE)</option>
+<option value="BBA">Bachelor of Business Administration (BBA)</option>
+<option value="Architecture">Architecture</option>
+<option value="Law">Law</option>
+<option value="Economics">Economics</option>
+</select>
+<br><br>
+ 
+        
+<!-- Photo Upload -->
+<label for="photo">Photo Upload:</label>
+<input type="file" id="photo" name="photo" required>
+<br><br>
+ 
+        <!-- Submit Button -->
+<input type="submit" value="Submit (Register)">
+</form>
+</body>
+</html>
