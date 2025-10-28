@@ -1,0 +1,127 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white; /* ✅ Full page white background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Title */
+.page-title {
+    margin-top: 40px;
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Form Container */
+.container {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/* Form Headings */
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4b7bec;
+    outline: none;
+    box-shadow: 0 0 5px rgba(75, 123, 236, 0.3);
+}
+
+/* Gender Section */
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.gender-options label {
+    font-weight: normal;
+}
+
+/* Terms Checkbox */
+.terms {
+    font-size: 13px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: #4b7bec;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3867d6;
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #3867d6;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
