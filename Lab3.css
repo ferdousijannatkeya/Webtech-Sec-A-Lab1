@@ -1,0 +1,219 @@
+/* ------------------- General Page Style ------------------- */
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px; /* base smaller than input field font */
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+/* ------------------- Header ------------------- */
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #b30000;
+  font-size: 28px; /* Main heading largest */
+  margin-bottom: 5px;
+}
+
+.steps {
+  color: #666;
+  font-size: 13px;
+}
+
+/* ------------------- Form Card ------------------- */
+.form-card {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 600px;
+}
+
+/* Required note */
+.required-note {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.star {
+  color: red;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 18px; /* slightly smaller than main heading */
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+/* ------------------- Label & Input Styling ------------------- */
+label {
+  font-size: 15px; /* labels slightly smaller than inputs */
+  font-weight: bold;
+  color: #333;
+  min-width: 140px;
+  text-align: right;
+  margin-right: 10px;
+  position: relative;
+  padding-right: 20px;
+}
+
+/* All text fields (inputs, select, textarea) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  font-size: 16px; /* all text fields same size */
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Colon after labels except last group (Additional Information) */
+.group:not(:last-child) label:after {
+  content: ":";
+  position: absolute;
+  right: 4px;
+}
+
+/* Remove colon in Additional Information */
+.group:last-child label:after,
+.group:last-child label::before {
+  content: "" !important;
+}
+
+/* Small helper text */
+.help {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ------------------- Layout ------------------- */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+/* ------------------- Checkbox & Radio Styling ------------------- */
+.donation-options,
+.contact-options,
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+.checkboxes label,
+.contact-options label,
+.donation-options label {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  margin-right: 15px;
+  text-align: left;
+  font-weight: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Remove colons in Additional Information checkboxes & contact options */
+.group:last-child .checkboxes label:after,
+.group:last-child .contact-options label:after {
+  content: "" !important;
+}
+
+/* ------------------- Inputs for special fields ------------------- */
+.small-input {
+  width: 120px;
+  margin-top: 8px;
+}
+
+.tiny {
+  width: 60px;
+}
+
+/* ------------------- Buttons ------------------- */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn.primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ------------------- Footer Secure Note ------------------- */
+.lock {
+  font-size: 16px;
+}
+
+/* Center the form */
+main.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card {
+  margin: 0 auto;
+}
+
+/* ------------------- Instruction / Bracket Sentences ------------------- */
+.instruction {
+  font-size: 13px;       /* smaller font size */
+  color: #555;            /* softer gray */
+  font-style: italic;     /* optional: makes it look like hint text */
+  text-align: right;      /* right aligned */
+  display: block;
+  margin: 5px 0 10px 0;
+}
