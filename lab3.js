@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // ✅ Validate required fields
+    //Validate required fields
     checkRequired("firstName", "First Name");
     checkRequired("lastName", "Last Name");
     checkRequired("address1", "Address 1");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     checkRequired("country", "Country");
     checkRequired("email", "Email");
 
-    // ✅ Validate email format
+    //Validate email format
     const email = document.getElementById("email");
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email.value && !emailPattern.test(email.value)) {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email.style.borderColor = "red";
     }
 
-    // ✅ Validate ZIP
+    //Validate ZIP
     const zip = document.getElementById("zip");
     const zipPattern = /^[0-9]{4,10}$/;
     if (zip.value && !zipPattern.test(zip.value)) {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       zip.style.borderColor = "red";
     }
 
-    // ✅ Validate donation amount
+    //Validate donation amount
     const amountRadios = document.querySelectorAll("input[name='amount']");
     const otherAmount = document.querySelector("input[name='otherAmount']");
     let amountSelected = false;
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       messages.push("Please select or enter a donation amount.");
     }
 
-    // ✅ Handle result
+    //Handle result
     if (!isValid) {
       event.preventDefault();
       alert(messages.join("\n"));

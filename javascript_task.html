@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All JavaScript Programs - Run in Console</title>
+</head>
+<body>
+  <h1>All JavaScript Programs</h1>
+  <p>Click a button to run that program. Output will appear in your browser <strong>Console</strong> (open DevTools → Console).</p>
+
+  <div class="controls">
+    <button id="hello">Hello World</button>
+    <button id="vars">Variables & Assignment</button>
+    <button id="arithmetic">Simple Arithmetic</button>
+    <button id="oddEven">Odd or Even Checker</button>
+    <button id="tempConv">Temperature Conversion</button>
+    <button id="calculator">Simple Calculator</button>
+    <button id="largest">Find Largest of 3</button>
+    <button id="loop1to10">Loop 1 to 10</button>
+    <button id="factorial">Factorial</button>
+    <button id="reverseStr">Reverse String</button>
+    <button id="sumArray">Sum of Array Elements</button>
+    <button id="primeCheck">Prime Number Checker</button>
+    <button id="arrayManip">Array Manipulation</button>
+    <button id="objExample">Simple Object Example</button>
+  </div>
+
+  <script>
+    // Helper: print a header for each program
+    function header(title){
+      console.groupCollapsed('🔹 ' + title);
+      console.log('--- ' + title + ' ---');
+    }
+    function footer(){
+      console.groupEnd();
+    }
+
+    // 1. Hello World
+    function helloWorld(){
+      header('Hello World');
+      console.log('Hello, World!');
+      footer();
+    }
+
+    // 2. Variable Declaration and Assignment
+    function variablesAndAssignment(){
+      header('Variable Declaration and Assignment');
+      var name = 'John';
+      var age = 25;
+      console.log('My name is ' + name + ' and I am ' + age + ' years old.');
+      footer();
+    }
+
+    // 3. Simple Arithmetic
+    function simpleArithmetic(){
+      header('Simple Arithmetic');
+      var num1 = 5;
+      var num2 = 10;
+      var sum = num1 + num2;
+      console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + sum);
+      footer();
+    }
+
+    // 4. Odd or Even
+    function oddOrEven(){
+      header('Odd or Even Checker');
+      var number = 7;
+      if (number % 2 === 0) {
+        console.log(number + ' is even.');
+      } else {
+        console.log(number + ' is odd.');
+      }
+      footer();
+    }
+
+    // 5. Temperature Conversion
+    function temperatureConversion(){
+      header('Temperature Conversion (C → F)');
+      var celsius = 25;
+      var fahrenheit = (celsius * 9/5) + 32;
+      console.log(celsius + '°C is equal to ' + fahrenheit + '°F');
+      footer();
+    }
+
+    // 6. Simple Calculator
+    function simpleCalculator(){
+      header('Simple Calculator');
+      var num1 = 10;
+      var num2 = 5;
+      console.log('Addition: ' + (num1 + num2));
+      console.log('Subtraction: ' + (num1 - num2));
+      console.log('Multiplication: ' + (num1 * num2));
+      console.log('Division: ' + (num1 / num2));
+      footer();
+    }
+
+    // 7. Find Largest Number
+    function findLargest(){
+      header('Find Largest Number');
+      var num1 = 15;
+      var num2 = 22;
+      var num3 = 8;
+      var largest = num1;
+      if (num2 > largest) { largest = num2; }
+      if (num3 > largest) { largest = num3; }
+      console.log('The largest number is: ' + largest);
+      footer();
+    }
+
+    // 8. Loop 1 to 10
+    function loopOneToTen(){
+      header('Loop Through Numbers (1 to 10)');
+      for (var i = 1; i <= 10; i++) { console.log(i); }
+      footer();
+    }
+
+    // 9. Factorial
+    function factorialOfNumber(){
+      header('Factorial of a Number');
+      var num = 5;
+      var factorial = 1;
+      for (var i = num; i > 0; i--) { factorial *= i; }
+      console.log('Factorial of ' + num + ' is: ' + factorial);
+      footer();
+    }
+
+    // 10. Reverse a String
+    function reverseString(){
+      header('Reverse a String');
+      var str = 'JavaScript';
+      var reversedStr = '';
+      for (var i = str.length - 1; i >= 0; i--) { reversedStr += str[i]; }
+      console.log('Reversed string is: ' + reversedStr);
+      footer();
+    }
+
+    // 11. Sum of Array Elements
+    function sumOfArray(){
+      header('Sum of Array Elements');
+      var arr = [1,2,3,4,5];
+      var sum = 0;
+      for (var i = 0; i < arr.length; i++) { sum += arr[i]; }
+      console.log('Sum of array elements: ' + sum);
+      footer();
+    }
+
+    // 12. Prime Number Checker
+    function primeChecker(){
+      header('Prime Number Checker');
+      var num = 29;
+      var isPrime = true;
+      for (var i = 2; i < num; i++) {
+        if (num % i === 0) { isPrime = false; break; }
+      }
+      if (isPrime) { console.log(num + ' is a prime number.'); }
+      else { console.log(num + ' is not a prime number.'); }
+      footer();
+    }
+
+    // 13. Array Manipulation
+    function arrayManipulation(){
+      header('Array Manipulation');
+      var arr = [1,2,3,4,5];
+      arr.push(6);
+      arr.shift();
+      console.log('Modified array: ' + arr);
+      footer();
+    }
+
+    // 14. Simple Object Example
+    function simpleObjectExample(){
+      header('Simple Object Example');
+      var person = { name: 'Alice', age: 30 };
+      console.log('Name: ' + person.name);
+      console.log('Age: ' + person.age);
+      footer();
+    }
+
+    // Button wiring
+    document.getElementById('hello').addEventListener('click', helloWorld);
+    document.getElementById('vars').addEventListener('click', variablesAndAssignment);
+    document.getElementById('arithmetic').addEventListener('click', simpleArithmetic);
+    document.getElementById('oddEven').addEventListener('click', oddOrEven);
+    document.getElementById('tempConv').addEventListener('click', temperatureConversion);
+    document.getElementById('calculator').addEventListener('click', simpleCalculator);
+    document.getElementById('largest').addEventListener('click', findLargest);
+    document.getElementById('loop1to10').addEventListener('click', loopOneToTen);
+    document.getElementById('factorial').addEventListener('click', factorialOfNumber);
+    document.getElementById('reverseStr').addEventListener('click', reverseString);
+    document.getElementById('sumArray').addEventListener('click', sumOfArray);
+    document.getElementById('primeCheck').addEventListener('click', primeChecker);
+    document.getElementById('arrayManip').addEventListener('click', arrayManipulation);
+    document.getElementById('objExample').addEventListener('click', simpleObjectExample);
+
+    // Optional: expose functions to global scope for manual testing in console
+    window.dev = {
+      helloWorld, variablesAndAssignment, simpleArithmetic, oddOrEven, temperatureConversion,
+      simpleCalculator, findLargest, loopOneToTen, factorialOfNumber, reverseString,
+      sumOfArray, primeChecker, arrayManipulation, simpleObjectExample
+    };
+  </script>
+</body>
+</html>
