@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f8;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            width: 60%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 2px solid #4b79a1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background: #f9fbfd;
+        }
+        legend {
+            font-weight: bold;
+            color: #4b79a1;
+            padding: 0 10px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background: #4b79a1;
+            color: white;
+        }
+        button[type="reset"] {
+            background: #777;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>University Admission Form</h1>
+
+    <form>
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" required maxlength="50"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required> Male<br>
+            <input type="radio" id="female" name="gender" value="Female" required> Female<br>
+            <input type="radio" id="other" name="gender" value="Other" required> Other<br><br>
+        </fieldset>
+        <br>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ssc">SSC Result:</label><br>
+            <input type="text" id="ssc" name="ssc" maxlength="5" required><br><br>
+
+            <label for="hsc">HSC Result:</label><br>
+            <input type="text" id="hsc" name="hsc" maxlength="5" required><br><br>
+
+            <label for="dept">Preferred Department:</label><br>
+            <select id="dept" name="dept" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Bachelor of Business Administration</option>
+                <option value="ENG">English</option>
+            </select><br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" name="interest" value="Programming"> Programming<br>
+            <input type="checkbox" name="interest" value="Robotics"> Robotics<br>
+            <input type="checkbox" name="interest" value="Sports"> Sports<br>
+            <input type="checkbox" name="interest" value="Music"> Music<br><br>
+        </fieldset>
+        <br>
+
+        <!-- Document Upload Section -->
+        <fieldset>
+            <legend>Required Documents</legend>
+
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo" required><br><br>
+
+            <label for="transcript">Upload Transcript:</label><br>
+            <input type="file" id="transcript" name="transcript" required><br><br>
+        </fieldset>
+        <br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

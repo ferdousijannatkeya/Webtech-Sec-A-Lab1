@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keya | Portfolio</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to bottom right, #dfe7ff, #eef4ff);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .logo-group {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Circle Initial */
+        .circle-initial {
+            width: 60px;
+            height: 60px;
+            background: #4a5cff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-right: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #4a5cff;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #1d2eff;
+        }
+
+        /* Section Box */
+        .section-box {
+            background: white;
+            padding: 35px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 22px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            border-left: 6px solid #4a5cff;
+            transition: 0.3s;
+        }
+
+        .section-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(74, 92, 255, 0.25);
+        }
+
+        /* Large Circle for About */
+        .big-circle {
+            width: 150px;
+            height: 150px;
+            background: #4a5cff;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+
+        .title {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .icon {
+            font-size: 32px;
+            margin-right: 10px;
+        }
+
+        hr {
+            height: 4px;
+            width: 70%;
+            margin: 35px auto;
+            background: #bccaff;
+            border: none;
+            border-radius: 2px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-group">
+            <div class="circle-initial">K</div>
+            <h1>Keya's Portfolio</h1>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <div class="section-box">
+        <div class="big-circle">K</div>
+
+        <div class="title">😊 About Me</div>
+
+        <p style="font-size: 18px; color: #333; text-align: center; line-height: 1.7;">
+            Hi! I'm <b>Keya</b>, a creative and enthusiastic learner who loves blending
+            <b>technology, design, and imagination</b>.
+            <br><br>
+            I enjoy building beautiful designs, learning web development, and trying new ideas.
+            I believe in staying curious and improving myself every day.
+            <br><br>
+            🌟 <b>Creative | Focused | Friendly | Ambitious</b><br>
+            💡 Passionate about UI/UX, front-end coding, and digital art.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Education -->
+    <div class="section-box">
+        <div class="title"><span class="icon">🎓</span> Education</div>
+
+        <p style="font-size: 17px; line-height: 1.7;">
+            • ABC School — Completed Schooling with strong academic performance  
+            • ABC College — Science Stream, developed interest in computers  
+            • ABC University — Pursuing Bachelor’s in Computer Science  
+            <br><br>
+            ⭐ Additional Learning:  
+            • HTML, CSS, JavaScript Basics  
+            • UI/UX Design Fundamentals  
+            • Graphic Design (Canva & Figma)  
+            • Basic Python & C Programming  
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Hobbies -->
+    <div class="section-box">
+        <div class="title"><span class="icon">🎨</span> Hobbies</div>
+
+        <p style="font-size: 17px; line-height: 1.7;">
+            I love activities that keep my creativity alive and help me relax.
+            <br><br>
+            🎨 Drawing & Digital Art  
+            🎵 Listening to Music  
+            ✈ Exploring new places  
+            📚 Reading Books  
+            🧵 DIY Crafts  
+            💻 Learning new technologies & tools  
+        </p>
+    </div>
+
+</body>
+</html>

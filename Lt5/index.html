@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jannatul Ferdousi Keya">
+  <meta name="description" content="DailyFlash - Breaking news and trending stories from around the world.">
+  <title>DailyFlash | Home</title>
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; background: #f4f6f8; color: #222; }
+    .container { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
+
+    header { display: flex; align-items: center; gap: 16px; padding: 18px 0; }
+    .logo { width: 60px; height: 60px; background: #2b7a78; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: bold; }
+    header h1 { font-size: 28px; }
+    header p { color: #555; margin-top: 4px; font-size: 14px; }
+
+    nav ul { list-style: none; display: flex; gap: 12px; margin-left: auto; }
+    nav a { text-decoration: none; padding: 8px 12px; color: #2b7a78; border-radius: 6px; }
+    nav a.current, nav a:hover { background: #2b7a78; color: #fff; }
+
+    .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-top: 18px; }
+    main { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+    aside { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+
+    article { margin-bottom: 18px; }
+    article header { display: flex; gap: 14px; }
+    article img { width: 150px; height: 100px; object-fit: cover; border-radius: 6px; }
+    article h2 { font-size: 20px; color: #1b3b3a; }
+    article time { color: #777; font-size: 13px; }
+    article p { margin-top: 8px; color: #333; }
+    .read-more { display: inline-block; margin-top: 10px; text-decoration: none; color: #2b7a78; font-weight: bold; }
+    hr.sep { border: none; border-top: 1px solid #eee; margin: 14px 0; }
+
+    /* Sidebar */
+    .top-headlines ul { list-style: none; }
+    .top-headlines li { margin-bottom: 8px; }
+    .top-headlines a { text-decoration: none; color: #2b7a78; }
+    .editor-pick { margin-top: 12px; padding: 10px; background: linear-gradient(90deg,#fff,#f7fffe); border-left: 4px solid #ffb86b; border-radius: 6px; }
+    .ad-box { margin-top: 14px; padding: 10px; border: 1px dashed #ccc; text-align: center; color: #666; }
+
+    footer { margin-top: 20px; text-align: center; color: #666; font-size: 14px; }
+    .socials a { margin: 0 6px; color: #2b7a78; text-decoration: none; }
+
+    .back-top { display:block; margin-top: 14px; text-align: right; }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">DF</div>
+      <div>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="Lt_5index.html" class="current">Home</a></li>
+          <li><a href="world.html">World</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <main>
+        <section aria-labelledby="latest-news">
+          <h2 id="latest-news">Latest News</h2>
+
+          <article>
+            <header>
+              <img src="https://via.placeholder.com/300x200.png?text=Climate+Summit" alt="World leaders at climate summit">
+              <div>
+                <h2>World Leaders Meet for Climate Summit</h2>
+                <time datetime="2025-11-18">November 18, 2025</time>
+                <p>The summit brought together heads of state and climate experts to discuss actionable steps to reduce global emissions. Delegates emphasized collaboration, financing, and technology transfers to support vulnerable nations. Negotiations focused on measurable targets for the next decade.</p>
+                <a class="read-more" href="#">Read More →</a>
+              </div>
+            </header>
+          </article>
+
+          <hr class="sep">
+
+          <article>
+            <header>
+              <img src="https://via.placeholder.com/300x200.png?text=Championship" alt="National team celebrating championship">
+              <div>
+                <h2>National Team Wins Championship</h2>
+                <time datetime="2025-11-17">November 17, 2025</time>
+                <p>The national team clinched the title after a dramatic final that went into extra time. Fans celebrated across the country as the team secured a historic victory, praised for their resilience and tactical discipline shown throughout the tournament.</p>
+                <a class="read-more" href="#">Read More →</a>
+              </div>
+            </header>
+          </article>
+
+          <hr class="sep">
+
+          <article>
+            <header>
+              <img src="https://via.placeholder.com/300x200.png?text=Smartphone+Sales" alt="New smartphone on display">
+              <div>
+                <h2>New Smartphone Sets Record Sales</h2>
+                <time datetime="2025-11-16">November 16, 2025</time>
+                <p>The latest flagship smartphone has set record-breaking sales within the first 48 hours of launch, driven by its advanced camera system and extended battery life. Retailers reported shortages while analysts predict continued demand through the holiday season.</p>
+                <a class="read-more" href="#">Read More →</a>
+              </div>
+            </header>
+          </article>
+
+        </section>
+
+        <a class="back-top" href="#top">Back to Top ↑</a>
+      </main>
+
+      <aside>
+        <div class="top-headlines">
+          <h3>Top Headlines</h3>
+          <ul>
+            <li><a href="#">Market rallies after positive earnings</a></li>
+            <li><a href="#">Health officials warn of seasonal virus</a></li>
+            <li><a href="#">City council approves new transit plan</a></li>
+            <li><a href="#">Breakthrough in renewable energy storage</a></li>
+            <li><a href="#">Local startup raises series A funding</a></li>
+          </ul>
+
+          <div class="editor-pick">
+            <strong>Editor's Pick:</strong>
+            <p><a href="#">In-depth: How coastal cities are adapting to sea level rise</a></p>
+          </div>
+
+          <div class="ad-box">
+            <small>Advertisement</small>
+            <p>Promote your brand here — contact ads@dailyflash.example</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© 2025 DailyFlash — All Rights Reserved.</p>
+      <p class="socials">
+        <a href="#">Facebook</a> • <a href="#">X</a> • <a href="#">Instagram</a> • <a href="#">LinkedIn</a>
+      </p>
+      <p>Designed by DailyFlash Editorial Team</p>
+    </footer>
+  </div>
+</body>
+</html>
