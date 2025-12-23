@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB - Faculty Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div class="dashboard-grid">
+        <aside class="sidebar" style="background-color: #003366;"> <div class="brand">AIUB Faculty</div>
+            <ul class="menu">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-user-graduate"></i> My Supervisees</a></li>
+                <li><a href="#"><i class="fas fa-file-signature"></i> Pending Requests <span style="background:red; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; margin-left: 5px;">3</span></a></li>
+            </ul>
+        </aside>
+
+        <header class="dash-header">
+             <div class="search-bar"></div>
+            <div class="user-info">
+                <span>Dr. Kamal Hossain (Faculty)</span>
+                 <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" alt="User" class="user-avatar">
+                <a href="login.html" class="text-blue"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <h2 class="page-title">Faculty Supervisor Overview</h2>
+
+            <div class="stats-grid">
+                <div class="card stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Active Students</p>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-icon" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;"><i class="fas fa-file-import"></i></div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Pending Proposals</p>
+                    </div>
+                </div>
+                 <div class="card stat-card">
+                    <div class="stat-icon" style="background: rgba(40, 167, 69, 0.1); color: #28a745;"><i class="fas fa-clipboard-check"></i></div>
+                    <div class="stat-info">
+                        <h3>45</h3>
+                        <p>Completed Supervision</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Pending Proposal Requests</h3>
+                <table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+                    <thead>
+                        <tr style="text-align: left; background: #f8f9fa; border-bottom: 2px solid #eee;">
+                            <th style="padding: 12px;">Student ID</th>
+                            <th style="padding: 12px;">Topic</th>
+                            <th style="padding: 12px;">Type</th>
+                            <th style="padding: 12px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 12px;">19-45678-2</td>
+                            <td style="padding: 12px;">AI in Traffic Management</td>
+                            <td style="padding: 12px;">Thesis</td>
+                            <td style="padding: 12px;">
+                                <button class="btn btn-primary" style="padding: 5px 10px; font-size: 0.8rem;">Review</button>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                             <td style="padding: 12px;">20-12345-1</td>
+                            <td style="padding: 12px;">Web Dev at Brain Station</td>
+                            <td style="padding: 12px;">Internship</td>
+                            <td style="padding: 12px;">
+                                <button class="btn btn-primary" style="padding: 5px 10px; font-size: 0.8rem;">Review</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
